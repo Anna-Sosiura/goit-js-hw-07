@@ -29,9 +29,11 @@ function handleClick(event){
     function handleClose(event){
         if (event.key==='Escape'){
             originalImg.close();
+            document.removeEventListener("keydown",handleClose);
         }
     }
+    
 }
-renderImages(galleryItems);
+
 
 
